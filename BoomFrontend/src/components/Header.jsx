@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [message, setmessage] = useState("your calls were encrypted");
@@ -29,7 +30,8 @@ function Header() {
         <div className="bg-white h-[3.5px] w-[25px]"></div>
         <div className="bg-white h-[3.5px] w-[25px]"></div>
       </button>
-      <button className="absolute left-100 top-18">schedule meet</button>
+      <Link to="schedulemeet">
+      <button className="absolute left-100 top-18">schedule meet</button></Link>
 
       {/* main contet */}
       <div className=" h-full w-full flex justify-center flex-col items-center text-black  ">
